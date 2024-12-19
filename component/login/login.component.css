@@ -1,0 +1,168 @@
+ .body {
+     width: 100%;
+     color: white;
+     background-color: rgb(30, 31, 32);
+     display: flex;
+     height: 100dvh;
+     justify-content: center;
+     align-items: center;
+ }
+
+ form {
+     width: 70%;
+     max-width: 950px;
+     background-color: rgb(14, 14, 14);
+     border-radius: 20px;
+     height: auto;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 2.5em;
+
+ }
+
+ input:-webkit-autofill {
+     /* -webkit-box-shadow: 0 0 0px 1000px #000000 inset !important; */
+     /* Your custom color */
+     -webkit-text-fill-color: #ffffff !important;
+     /* Text color */
+     transition: background-color 5000s ease-in-out 0s;
+     /* Smooth override */
+
+
+
+ }
+
+
+
+
+ input {
+
+     background-color: inherit;
+     border: none;
+     outline: 1px solid rgb(142, 145, 143);
+     color: aliceblue;
+     padding: 0.85em 0;
+     border-radius: 5px;
+     font-size: 1em;
+     width: 100%;
+     text-indent: 0.8em;
+
+ }
+
+ .bg {
+     background-color: rgb(14, 14, 14);
+ }
+
+
+ span {
+     position: absolute;
+     font-weight: 200;
+     color: rgb(196, 187, 174);
+     transform: translate(10%, 70%);
+     text-overflow: ellipsis;
+     transition: transform .15s cubic-bezier(.4, 0, .2, 1), font-size .15s cubic-bezier(.4, 0, .2, 1);
+
+
+
+     background-color: rgb(14, 14, 14);
+     padding: 0 6px;
+ }
+
+
+
+ input:focus {
+     outline: 2px solid rgb(168, 199, 250);
+
+ }
+
+
+
+ .container:has(input:focus) .label,
+ .container1:has(input:focus) .label1 {
+     transform: translate(10%, -50%);
+     font-size: 0.9em;
+     color: rgb(168, 199, 250);
+
+
+ }
+
+
+
+
+
+ .top {
+     transform: translate(10%, -50%);
+     font-size: 0.9em;
+
+ }
+
+
+
+ img {
+     height: 50px;
+     width: 50px;
+     position: relative;
+     top: -5px;
+     left: -3px;
+ }
+
+
+
+ input:autofill {
+     background-color: rgb(36, 44, 58);
+     /* Change to any color you want */
+ }
+
+ /* This is an optional style for when the input is focused, to make it more visible */
+ input:focus:autofill {
+     background-color: rgb(36, 44, 58);
+ }
+
+
+ button {
+     border-radius: 30px;
+     background-color: rgb(182, 208, 251);
+     outline: none;
+     border: none;
+     padding: 10px 15px;
+     font-weight: bolder;
+ }
+
+
+ .button {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .create {
+
+
+     cursor: pointer;
+     width: fit-content;
+     border-radius: 20px;
+ }
+
+
+ p {
+     padding: 5px;
+     color: rgb(144, 170, 213);
+     font-size: 0.9em;
+ }
+
+
+ .create:hover {
+     background-color: rgb(20, 21, 23);
+ }
+
+ .button p {
+     font-weight: bolder;
+     padding: 10px 5px;
+
+ }
+
+
+ button {
+     cursor: pointer;
+ }
